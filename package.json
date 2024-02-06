@@ -1,19 +1,22 @@
 {
   "name": "aimpadapi",
   "version": "1.0.0",
-  "description": "Aimpad Api Integration Library",
+  "description": "Aimped API Integration Library",
   "main": "index.js",
   "scripts": {
     "doc": "jsdoc -c jsdoc.config.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Aimpad",
+    "Aimped",
     "Api",
-    "Integration"
+    "Integration",
+    "Library"
   ],
-  "author": "Aimpad",
-  "license": "ISC",
+  "author": "Aimped.ai",
+  "license": "MIT",
+  "homepage": "https://www.aimped.ai",
+  "repository": "https://github.com/aimped-ai/aimpedapi-js",
   "dependencies": {
     "axios": "^1.6.7",
     "dayjs": "^1.11.10",
