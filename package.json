@@ -1,0 +1,23 @@
+{
+  "name": "aimpadapi",
+  "version": "1.0.0",
+  "description": "Aimpad Api Integration Library",
+  "main": "index.js",
+  "scripts": {
+    "doc": "jsdoc -c jsdoc.config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Aimpad",
+    "Api",
+    "Integration"
+  ],
+  "author": "Aimpad",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dayjs": "^1.11.10",
+    "form-data": "^4.0.0",
+    "jwt-decode": "^4.0.0"
+  }
+}
