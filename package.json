@@ -1,5 +1,5 @@
 {
-  "name": "aimpadapi",
+  "name": "aimpedapi-js",
   "version": "1.0.0",
   "description": "Aimped API Integration Library",
   "main": "index.js",
