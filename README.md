@@ -7,7 +7,7 @@ aimped is a Nodejs library used for Aimped Api integrations.
 Use the package manager [npm](https://www.npmjs.com/) to install aimped.
 
 ```bash
-npm install aimped
+npm install aimpedapi-js
 ```
 
 ## Documentation
@@ -24,26 +24,22 @@ yarn doc
 Use the [git]() to clone aimpedapijs.
 
 ```bash
-git clone https://gitlab.nioyatech.com/project-ml-hub/aimpedapijs.git
+git clone https://github.com/aimped-ai/aimpedapi-js.git
 ```
 
 ## Configuration of the Library
 
 ```javascript
 // require aimped
-const Aimped = require('aimped');
+const Aimped = require('aimpedapi-js');
 
 // Create new class Aimped
 const userKey = ''; // Userkey received from A3M.
 const userSecret = ''; // userSecret received from A3M.
-const clientID = ''; // domain client id if necessary - will be obsolete soon
-const clientSECRET = ''; // domain client secret if necessary - will be obsolete soon
 const BASE_URL = 'https://aimped.ai', // Aimped domain url
 
 const Aimped = new Aimped(userKey, userSecret, {
   baseUrl: BASE_URL,
-  clientid: clientID, //optional
-  clientSecret: clientSECRET,  //optional
 });
 ```
 
