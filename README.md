@@ -38,7 +38,7 @@ const userKey = ''; // Userkey received from A3M.
 const userSecret = ''; // userSecret received from A3M.
 const BASE_URL = 'https://aimped.ai', // Aimped domain url
 
-const Aimped = new Aimped(userKey, userSecret, {
+const AIMPED = new Aimped(userKey, userSecret, {
   baseUrl: BASE_URL,
 });
 ```
@@ -55,7 +55,7 @@ const inputData = {...} ;// input information, can be checked from model descrip
 ```javascript
 const runModel = async () => {
   try {
-    const result = await Aimped.runModel(modelId, inputData);
+    const result = await AIMPED.runModel(modelId, inputData);
     console.log(JSON.stringify(result));
   } catch (error) {
     console.log(error);
@@ -69,7 +69,7 @@ const runModel = async () => {
 // return callback function
 
 const runModelCallback = async () => {
-  Aimped.runModelCallback(modelId, inputData, (e) => {
+  AIMPED.runModelCallback(modelId, inputData, (e) => {
     const { event, message, time, data } = e;
     switch (event) {
       case 'start':
@@ -100,7 +100,7 @@ Some of the models supports file inputs. These inputs are accepted as URIs. Here
 
 ```javascript
 const runModelFileUpload = async () => {
-  await Aimped.getAllData();
+  await AIMPED.getAllData();
   const result = await AIMPED.fileUpload(
     modelId,
     '/Users/joe/Downloads/xyz.pdf' // sample file path to upload
